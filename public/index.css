@@ -1,0 +1,83 @@
+body{
+    width:100vw;
+    overflow-x:hidden;
+}
+.header {
+    width: 100vw;
+}
+.header-img {
+    width: 100vw;
+    min-width:1115px;
+    height: 104px;
+}
+.container {
+    max-width:960px;
+    padding-top:20px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 1fr min-content;
+    grid-gap:4px;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+    grid-template-areas:
+    'name stick'
+    'popdishes sticky'
+    'moreData sticky'
+    'reviews sticky'
+    'collection collection'
+    'alsoView alsoView' 
+    'siteMap siteMap';
+}
+.name-container {
+    margin-top:20px;
+    width: 605px;
+    overflow:hidden;
+    grid-area:name;
+}
+#popular-dishes {
+    grid-area: popdishes;
+}
+.collection {
+    margin-top:36px;
+    padding-bottom:36px;
+    grid-area:collection;
+    max-width: 900px;
+    border-bottom: 1px solid #e6e6e6;
+
+}
+.also-view {
+    margin-top:36px;
+    margin-bottom:36px;
+    grid-area:alsoView;
+    max-width: 900px;
+}
+.more-data {
+    width: 605px;
+    grid-area:moreData;
+}
+.contact-info {
+    position:sticky;
+    top:0;
+    padding-top:20px;
+    width:320px;
+}
+.site-map {
+    margin-bottom:36px;
+    grid-area: siteMap;
+    max-width: 900px;
+}
+
+.footer-img {
+    width: 100%;
+    min-width:850px;
+    height:auto;
+    margin:auto;
+}
+.footer {
+    padding-top:50px;
+    padding-left:300px; 
+    padding-right:300px;
+    background-color:#f5f5f5;
+    width:calc(100vw - 600px);
+    min-width:calc(1250px - 600px); 
+    border-top: 1px solid #e6e6e6; 
+}
